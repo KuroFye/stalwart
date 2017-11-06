@@ -15,6 +15,12 @@ public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
 
+	UPROPERTY(EditAnywhere, Category = Variables, BlueprintReadWrite)
+		float MaxHealth;
+
+	UPROPERTY(EditAnywhere, Category = Variables, BlueprintReadWrite)
+		float CurrentHealth;
+
 	UPROPERTY(EditAnywhere, Category = Behavior)
 		class UBehaviorTree *BotBehavior;
 
